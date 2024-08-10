@@ -20,13 +20,13 @@ export function Header() {
 
   return (
     <header className="dark:bg-gray-900">
-      <div className="mx-auto flex flex-col h-16 self-center px-4">
+      <div className="container flex w-full flex-col h-16 px-4 items-center">
         <Image
           alt="Image not Found"
           src={"/logo.png"}
           width="72"
           height="82"
-          className="order-first sm:-order-none self-center"
+          className="order-first sm:-order-none "
         />
         {/* <Button variant="primary" onClick={() => handleJoinWishlist()}>
           {strings.join_wishlist}

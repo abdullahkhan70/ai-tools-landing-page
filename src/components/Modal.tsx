@@ -37,13 +37,10 @@ const Modal = (props: Props) => {
     setModal(!openModal);
   };
   const handleSubmitBtn: SubmitHandler<Inputs> = async (form) => {
-    // const response = await getSheetData();
-    // console.log(response)
     const {name, email} = form;
 
     const response = await save_google_sheet({ name, email });
     if (response??length > 0) {
-      // alert("Thanks for becoming a Beta Tester.");
       toast.success("Thanks for becoming a Beta Tester!", {
         position: "top-center",
       })

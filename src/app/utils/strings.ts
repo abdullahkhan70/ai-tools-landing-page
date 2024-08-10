@@ -7,5 +7,9 @@ export const strings = {
     submit: "Submit",
     cancel: "Cancel",
     emailMessage: "We will send you an invitation in your inbox",
-    message: "Change your life using your favorite AI Tools, wants to become the testers!",
+    message: "Change your life using your favorite AI Tools, wants to become a tester and buy me a cup of coffee.",
+    andText: "And",
+    becomePatreon: "Buy me a Cup of Coffee",
+    patreonWebsiteLink: "https://www.patreon.com/FavoriteAITools",
+    favoriteAIToolsName: "Favorite AI Tools",
 }
