@@ -4,6 +4,7 @@ import { save_google_sheet } from "@/app/actions/google-sheets.action";
 import { strings } from "@/app/utils/strings";
 import { SubmitHandler, useForm } from "react-hook-form";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 type Props = {
   title: string;
@@ -42,7 +43,10 @@ const Modal = (props: Props) => {
 
     const response = await save_google_sheet({ name, email });
     if (response??length > 0) {
-      alert("Thanks for becoming a Beta Tester.");
+      // alert("Thanks for becoming a Beta Tester.");
+      toast.success("Thanks for becoming a Beta Tester!", {
+        position: "top-center",
+      })
       setName("");
       setEmail("");
       setModal(!openModal);
