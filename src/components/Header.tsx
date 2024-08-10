@@ -19,7 +19,7 @@ export function Header() {
   }
 
   return (
-    <header className="dark:bg-gray-900 w-full">
+    <header className="dark:bg-gray-900 w-screen">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 w-full">
         <Image
           alt="Image not Found"
