@@ -19,19 +19,19 @@ export function Header() {
   }
 
   return (
-    <header className="dark:bg-gray-900 w-full">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+    <header className="dark:bg-gray-900">
+      <div className="mx-auto flex flex-col h-16 self-center px-4">
         <Image
           alt="Image not Found"
           src={"/logo.png"}
           width="72"
           height="82"
-          className="order-first sm:-order-none"
+          className="order-first sm:-order-none self-center"
         />
         {/* <Button variant="primary" onClick={() => handleJoinWishlist()}>
           {strings.join_wishlist}
         </Button> */}
-        <Modal title={strings.join_wishlist} buttonStyle="disabled:bg-gray-600 bg-blue-400 hover:bg-blue-500" />
+        {/* <Modal title={strings.join_wishlist} buttonStyle="disabled:bg-gray-600 bg-blue-400 hover:bg-blue-500" /> */}
       </div>
    
     </header>
